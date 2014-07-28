@@ -1,1 +1,55 @@
-aaa
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Dusan</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="/css/bootstrap.css" rel="stylesheet">
+   <link href="/css/github.css" rel="stylesheet">
+   <link href="/css/responsive-video.css" rel="stylesheet">
+</head>
+<body>
+   <div class="container">
+   <nav class="navbar navbar-default">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#dusan-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="/">dusan.ipb.ac.rs</a>
+      </div>
+      <div class="collapse navbar-collapse" id="dusan-navbar-collapse">
+         <ul class="nav navbar-nav">
+            <li class="<?php echo strpos($_SERVER['SCRIPT_NAME'], '/videos/') === 0 ? 'active' : '' ?>"><a href="/videos">Videos</a></li>
+            <li class="<?php echo strpos($_SERVER['SCRIPT_NAME'], '/monitoring/') === 0 ? 'active' : '' ?>"><a href="/monitoring">Monitoring</a></li>
+            <li class="<?php echo strpos($_SERVER['SCRIPT_NAME'], '/documents/') === 0 ? 'active' : '' ?>"><a href="/documents">Documents</a></li>
+         </ul>
+      </div>
+   </nav>
+   </div>
+   <div class="container">
+      <p></p>
+
+   </div>
+   <br>
+   <div class="container">
+      <blockquote>
+         <small>This page was last modified on 01 Dec 2013.</small>
+      </blockquote>
+   </div>
+   <script src="/js/jquery.js"></script>
+   <script src="/js/bootstrap.min.js"></script>
+   <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-43358888-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+   </script>
+</body>
+</html>
