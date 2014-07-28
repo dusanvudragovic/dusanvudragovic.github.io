@@ -1,1 +1,6 @@
-# Home page
+---
+title:  Home
+layout: default
+---
+
+aaa
