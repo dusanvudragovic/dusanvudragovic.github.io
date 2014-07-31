@@ -6,18 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="/css/bootstrap.min.css" rel="stylesheet">
         <style>
-            html { 
-                background: url(/img/background.png) no-repeat center center fixed; 
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-            }
             body {
-                padding-top: 40px;
-                margin-left: 20px;
-                margin-right: 20px;
-                background: transparent;
+                padding-top:  40px;
+                margin-left:  35px;
+                margin-right: 35px;
             }
         </style>
         <title>{{ page.title }}</title>
@@ -37,7 +29,7 @@
                 <div class="collapse navbar-collapse" id="dusan-navbar-collapse">
                     <ul class="nav navbar-nav">
                         {% for node in site.pages %}
-                            {% if node.title == "Home" %}
+                            {% if node.title == "dusanvudragovic.github.io" %}
                             {% else %}
                                 {% if page.url == node.url %}
                                     <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
