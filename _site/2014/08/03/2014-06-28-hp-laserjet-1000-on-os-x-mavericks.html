@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body {
+                padding-top:  40px;
+                margin-left:  35px;
+                margin-right: 35px;
+            }
+        </style>
+        <title>HP LaserJet 1000 on OS X Mavericks</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#dusan-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">dusanvudragovic.github.io</a>
+                </div>
+                <div class="collapse navbar-collapse" id="dusan-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        
+                            
+                            
+                        
+                            
+                                
+                                    <li><a href="/notes/index.html">notes</a></li>
+                                
+                            
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+    <h3>HP LaserJet 1000 on OS X Mavericks</h3>
+    <p><a href="http://h20565.www2.hp.com/portal/site/hpsc/template.PAGE/public/psi/swdHome?sp4ts.oid=45675&amp;ac.admitted=1406812827187.876444892.492883150">HP LaserJet 1000</a> is an old printer model that is not supported on <a href="https://www.apple.com/osx/">Mac OS X</a>. However, using <a href="http://foo2zjs.rkkda.com/">foo2zjs</a> printer driver for <a href="http://www.undocprint.org/formats/page_description_languages/zjstream">ZjStream protocol</a> it is possible to configure <a href="https://www.apple.com/osx/">OS X Mavericks</a> (as well as <a href="http://www.apple.com/support/snowleopard/">Snow Leopard</a>, <a href="http://www.apple.com/support/lion/">Lion</a>, and <a href="http://www.apple.com/support/osx/mountainlion/">Mountain Lion</a>) to support <a href="http://h20565.www2.hp.com/portal/site/hpsc/template.PAGE/public/psi/swdHome?sp4ts.oid=45675&amp;ac.admitted=1406812827187.876444892.492883150">HP LaserJet 1000</a>. Here are instructions on how to set it up.</p>
+
+<p><a href="http://foo2zjs.rkkda.com/">Foo2zjs</a> is an open source printer driver, and it is recommended not to use precompiled packages, but to compile from the source tarball provided at <a href="http://foo2zjs.rkkda.com/">foo2zjs</a> home page. Therefore, before you actually compile it, make sure to have <a href="https://developer.apple.com/xcode/">Xcode</a> installed. <a href="https://developer.apple.com/xcode/">Xcode</a> is a package provided by <a href="http://www.apple.com/">Apple</a> containing compilers, libraries and additional tools required to develop and compile applications for <a href="https://www.apple.com/osx/">Mac OS X</a>. The latest version of <a href="https://developer.apple.com/xcode/">Xcode</a> is available at <a href="http://itunes.apple.com/us/app/xcode/id497799835">Mac App Store</a>, but it could be also downloaded from the <a href="https://developer.apple.com/downloads/">Apple developer website</a>. Once <a href="https://developer.apple.com/xcode/">Xcode</a> is installed, from the <a href="http://en.wikipedia.org/wiki/Terminal_(OS_X)">Terminal application</a> (<code>/Applications/Utilities/Terminal.app</code>) command line, run:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">    $ xcode-select --install
+</code></pre></div>
+<p>and click the <strong>Install</strong> button to install the required command line developer tools. The same tools could be downloaded from the <a href="https://developer.apple.com/downloads/">Apple developer website</a> as well.</p>
+
+<p>Beside <a href="https://developer.apple.com/xcode/">Xcode</a>, since <a href="http://foo2zjs.rkkda.com/">foo2zjs</a> building process is based on <a href="http://www.gnu.org/prep/standards/html_node/Makefile-Conventions.html">Makefile</a>, a few additional command line tools (<a href="https://www.gnu.org/software/autoconf/">autoconf</a>, <a href="https://www.gnu.org/software/automake/">automake</a>, <a href="https://www.gnu.org/software/wget/">wget</a>, and <a href="https://www.gnu.org/software/gsed/">gsed</a>) have to be installed. Also, since the driver uses <a href="http://www.ghostscript.com/">Ghostscript</a> (PostScript/PDF interpreter) to perform image processing, this tool is required as well. Installation of all these tools could be easily done via <a href="https://www.macports.org/">MacPorts</a> open-source software installer system. <a href="https://www.apple.com/osx/">Mac OS X</a> package installer provided at <a href="https://www.macports.org/">MacPorts</a> home page, automatically installs <a href="https://www.macports.org/">MacPorts</a>, sets the shell environment, and runs a selfupdate operation to update the ports tree and <a href="https://www.macports.org/">MacPorts</a> base with the latest release. To confirm the installation is working as expected, from the <a href="http://en.wikipedia.org/wiki/Terminal_(OS_X)">Terminal application</a>, run:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">    $ port version
+</code></pre></div>
+<p>Using <a href="https://www.macports.org/">MacPorts</a> main utility, <code>port</code> command, <a href="http://www.ghostscript.com/">Ghostscript</a> and additional command line tools (<a href="https://www.gnu.org/software/autoconf/">autoconf</a> and <a href="https://www.gnu.org/software/automake/">automake</a> are provided within <a href="https://www.macports.org/ports.php?by=library&amp;substr=coreutils">coreutils</a> package) can be installed with the following command:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">    $ sudo port install ghostscript coreutils wget gsed
+</code></pre></div>
+<p>Now proceed with <a href="http://foo2zjs.rkkda.com/">foo2zjs</a> printer driver installation by following these steps:</p>
+
+<ul>
+<li><p>Change home directory:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">    $ cd /tmp
+</code></pre></div></li>
+<li><p>Download <a href="http://foo2zjs.rkkda.com/">foo2zjs</a> source tarball :</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">    $ wget http://foo2zjs.rkkda.com/foo2zjs.tar.gz
+</code></pre></div></li>
+<li><p>Extract all files from the tarball:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">    $ tar -zxvf foo2zjs.tar.gz
+</code></pre></div></li>
+<li><p>Go to the extracted directory:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">    $ cd foo2zjs
+</code></pre></div></li>
+<li><p>Compile <a href="http://foo2zjs.rkkda.com/">foo2zjs</a> source:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">    $ make
+</code></pre></div></li>
+<li><p>Download HP LaserJet 1000 firmware file:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">    $ ./getweb 1000
+</code></pre></div></li>
+<li><p>Download <a href="http://foo2zjs.rkkda.com/">foo2zjs</a> printer driver:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">    $ sudo make install
+</code></pre></div></li>
+<li><p>Optionally (but recommended), install hot-plug utility that loads the firmware automatically when the printer is plugged in (or turned on):</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">    $ sudo make install-hotplug
+</code></pre></div>
+<p>Otherwise, with the following command the firmware file has to be sent manually each time the printer is powered on:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">    $ sudo lp -oraw /usr/share/foo2zjs/firmware/sihp1000.dl
+</code></pre></div></li>
+</ul>
+
+<p>If all steps passed successfully, add the printer (HP LaserJet 1000 Foomatic/foo2zjs) via Printers &amp; Scanners pane in System Preferences. </p>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    </body>
+</html>
+
