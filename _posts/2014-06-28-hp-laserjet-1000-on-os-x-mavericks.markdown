@@ -13,7 +13,7 @@ layout: default
 
 and click the __Install__ button to install the required command line developer tools. The same tools could be downloaded from the [Apple developer website](https://developer.apple.com/downloads/) as well.
 
-Beside [Xcode](https://developer.apple.com/xcode/), since [foo2zjs](http://foo2zjs.rkkda.com/) building process is based on [Makefile](http://www.gnu.org/prep/standards/html_node/Makefile-Conventions.html), a few additional command line tools ([autoconf](https://www.gnu.org/software/autoconf/), [automake](https://www.gnu.org/software/automake/), [wget](https://www.gnu.org/software/wget/), and [gsed](https://www.gnu.org/software/gsed/)) have to be installed. Also, since the driver uses [Ghostscript](http://www.ghostscript.com/) (PostScript/PDF interpreter) to perform image processing, this tool is required as well. Installation of all these tools could be easily done via [MacPorts](https://www.macports.org/) open-source software installer system. [Mac OS X](https://www.apple.com/osx/) package installer provided at [MacPorts](https://www.macports.org/) home page, automatically installs [MacPorts](https://www.macports.org/), sets the shell environment, and runs a selfupdate operation to update the ports tree and [MacPorts](https://www.macports.org/) base with the latest release. To confirm the installation is working as expected, from the [Terminal application](http://en.wikipedia.org/wiki/Terminal_(OS_X)), run:
+Beside [Xcode](https://developer.apple.com/xcode/), since [foo2zjs](http://foo2zjs.rkkda.com/) building process is based on [Makefile](http://www.gnu.org/prep/standards/html_node/Makefile-Conventions.html), a few additional command line tools ([autoconf](https://www.gnu.org/software/autoconf/), [automake](https://www.gnu.org/software/automake/), [wget](https://www.gnu.org/software/wget/), and [gsed](https://www.gnu.org/software/gsed/)) have to be installed. Also, since the driver uses [Ghostscript](http://www.ghostscript.com/) (PostScript and PDF interpreter) to perform image processing, this application is required as well. Installation of all these applications could be easily done via [MacPorts](https://www.macports.org/) open-source software installer system. [Mac OS X](https://www.apple.com/osx/) package installer provided at [MacPorts](https://www.macports.org/) home page, automatically installs [MacPorts](https://www.macports.org/), sets the shell environment, and runs a selfupdate operation to update the ports tree and [MacPorts](https://www.macports.org/) base with the latest release. To confirm the installation is working as expected, from the [Terminal application](http://en.wikipedia.org/wiki/Terminal_(OS_X)), run:
 
 ```bash
     $ port version
@@ -25,7 +25,7 @@ Using [MacPorts](https://www.macports.org/) main utility, ```port``` command, [G
     $ sudo port install ghostscript coreutils wget gsed
 ```
 
-
+[Foo2zjs](http://foo2zjs.rkkda.com/) uses [Foomatic](http://www.linuxfoundation.org/collaborate/workgroups/openprinting/databasefoomatic) scripts to convert the incoming PostScript data into the printer's native format. Fortunately, [Foomatic](http://www.linuxfoundation.org/collaborate/workgroups/openprinting/databasefoomatic) package installer are provided by the [Linux Foundation](http://www.linuxfoundation.org) and it could be downloaded from [http://www.linuxfoundation.org/collaborate/workgroups/openprinting/macosxfoomatic](http://www.linuxfoundation.org/collaborate/workgroups/openprinting/macosxfoomatic).
 
 Now proceed with [foo2zjs](http://foo2zjs.rkkda.com/) printer driver installation by following these steps:
 
@@ -44,7 +44,7 @@ Now proceed with [foo2zjs](http://foo2zjs.rkkda.com/) printer driver installatio
  - Extract all files from the tarball:
 
     ```bash
-        $ tar -zxvf foo2zjs.tar.gz
+        $ tar zxvf foo2zjs.tar.gz
     ``` 
 
  - Go to the extracted directory:
