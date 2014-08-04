@@ -1,6 +1,8 @@
 ---
-title: notes
-layout: default
+title:      notes
+layout:     default
+group:      notes
+navigation: true
 ---
 
 {% for post in site.posts %}
