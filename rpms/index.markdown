@@ -37,6 +37,14 @@ navigation: true
                     </thead>
                     <tbody>
                       <tr>
+                        <td>woodoomon-0.1.7-1</td>
+                        <td>11 Aug 2014</td>
+                        <td>
+                            {{ '[woodoomon-0.1.7-1.x86_64.rpm](http://dl.dropbox.com/s/9v8g6i1em3tqj3z/woodoomon-0.1.7-1.x86_64.rpm)' | markdownify }}
+                            {{ '[woodoomon\_0.1.7-1\_amd64.deb](http://dl.dropbox.com/s/02y05akb07rstfg/woodoomon_0.1.7-1_amd64.deb)' | markdownify }}
+                        </td>
+                      </tr>
+                      <tr>
                         <td>woodoomon-0.1.6-1</td>
                         <td>07 Aug 2014</td>
                         <td>
