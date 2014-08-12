@@ -1,4 +1,4 @@
 ---
-title: dusanvudragovic.github.io
-layout: default
+title:      dusanvudragovic.github.io
+layout:     default
 ---
