@@ -15,6 +15,14 @@ navigation: false
                     </thead>
                     <tbody>
                       <tr>
+                        <td>woodoomon-0.1.8-1</td>
+                        <td>12 Aug 2014</td>
+                        <td>
+                            {{ '[woodoomon-0.1.8-1.x86_64.rpm](http://dl.dropbox.com/s/1rqvjl71jy1lrl7/woodoomon-0.1.8-1.x86_64.rpm)' | markdownify }}
+                            {{ '[woodoomon\_0.1.8-1\_amd64.deb](http://dl.dropbox.com/s/asylfayu5f5ivc1/woodoomon_0.1.8-1_amd64.deb)' | markdownify }}
+                        </td>
+                      </tr>
+                      <tr>
                         <td>woodoomon-0.1.7-1</td>
                         <td>11 Aug 2014</td>
                         <td>
@@ -46,14 +54,6 @@ navigation: false
                             {{ '[woodoomon\_0.1.4-1\_amd64.deb](http://dl.dropbox.com/s/nb6emkmfl1ehke5/woodoomon_0.1.4-1_amd64.deb)' | markdownify }}
                         </td>
                       </tr>
-                      <tr>
-                        <td>woodoomon-0.1.3-1</td>
-                        <td>05 Jun 2014</td>
-                        <td>
-                            {{ '[woodoomon-0.1.3-1.x86_64.rpm](http://dl.dropbox.com/s/nt4ckb68hoy3axe/woodoomon-0.1.3-1.x86_64.rpm)' | markdownify }}
-                            {{ '[woodoomon\_0.1.3-1\_amd64.deb](http://dl.dropbox.com/s/3baat6ehklvf76y/woodoomon_0.1.3-1_amd64.deb)' | markdownify }}
-                        </td>
-                      </tr>
                     </tbody>
                 </table>
             </div>
@@ -65,6 +65,14 @@ navigation: false
                     {{ '&nbsp;' | markdownify }}
                     </thead>
                     <tbody>
+                      <tr>
+                        <td>woodoomon-0.1.3-1</td>
+                        <td>05 Jun 2014</td>
+                        <td>
+                            {{ '[woodoomon-0.1.3-1.x86_64.rpm](http://dl.dropbox.com/s/nt4ckb68hoy3axe/woodoomon-0.1.3-1.x86_64.rpm)' | markdownify }}
+                            {{ '[woodoomon\_0.1.3-1\_amd64.deb](http://dl.dropbox.com/s/3baat6ehklvf76y/woodoomon_0.1.3-1_amd64.deb)' | markdownify }}
+                        </td>
+                      </tr>
                       <tr>
                         <td>woodoomon-0.1.2-1</td>
                         <td>05 Jun 2014</td>
