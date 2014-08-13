@@ -3,16 +3,18 @@ title:      woodoomon
 layout:     default
 group:      rpms
 navigation: false
+created:    28 Jun 2014
+modified:   12 Aug 2014
 ---
 
 <div class="bs-docs-section" markdown="1">
     <div class="row">
+        <div class="col-lg-12">
+        {{ 'WooDooMon package contains a set of probes for monitoring IPB/SCL computational resources.' | markdownify }}
+        </div>
         <div class="col-lg-6">
             <div class="bs-component">
-                <table class="table table-striped table-hover">
-                    <thead>
-                    {{ 'WooDooMon package contains a set of probes for monitoring IPB/SCL computational resources.' | markdownify }}
-                    </thead>
+                <table class="table table-striped">
                     <tbody>
                       <tr>
                         <td>woodoomon-0.1.8-1</td>
@@ -60,10 +62,7 @@ navigation: false
         </div>
         <div class="col-lg-6">
             <div class="bs-component">
-                <table class="table table-striped table-hover">
-                    <thead>
-                    {{ '&nbsp;' | markdownify }}
-                    </thead>
+                <table class="table table-striped">
                     <tbody>
                       <tr>
                         <td>woodoomon-0.1.3-1</td>

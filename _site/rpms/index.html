@@ -7,19 +7,19 @@
         <link href="/css/bootstrap.min.css" rel="stylesheet">
         <style>
             body {
-                padding-top:  40px;
-                margin-left:  40px;
-                margin-right: 40px;
+                padding-top:  60px;
+                margin-left:  30px;
+                margin-right: 30px;
             }
             .navbar{
-                margin-left:  40px;
-                margin-right: 40px;
+                margin-left:  30px;
+                margin-right: 30px;
             }
         </style>
         <title>rpms</title>
     </head>
     <body>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#dusan-navbar-collapse">
@@ -59,17 +59,21 @@
         </nav>
 
 
-    <h3>rpms</h3>
-    <div class="bs-docs-section" markdown="1">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>rpms</h3>
+        </div>
+          <div class="panel-body">
+            <div class="bs-docs-section" markdown="1">
     <div class="row">
         <div class="col-lg-6">
             <div class="page-header">
-                <h5 id="tables">knock</h5>
+                <h4 id="tables">knock</h4>
             </div>
             <div class="bs-component">
                 <table class="table table-striped table-hover">
                     <thead>
-                    <p>The knock package contains client (knock), daemon (knockd), and corresponding init.d script. Knockd is a <a href="http://en.wikipedia.org/wiki/Port_knocking">port- knocking</a> process that listens all network traffic at the link-layer level. Once it detects a specific sequence of port-hits, it runs a command defined in its configuration file. Usually this command opens up hole in a firewall for access. Knock is a port-knock client. It allows sending of TCP/UDP packets, creating a specific sequence of port-hits on the listening server. More information about Knock is available at <a href="http://www.zeroflux.org/projects/knock/">Knock project web site</a>. Knock source code is hosted on <a href="https://github.com/jvinet/knock/">Knock GitHub repository</a>.</p>
+                    <p>The knock package contains client (knock), daemon (knockd), and corresponding init.d script. Knockd is a <a href="http://en.wikipedia.org/wiki/Port_knocking">port-knocking</a> process that listens all network traffic at the link-layer level. Once it detects a specific sequence of port-hits, it runs a command defined in its configuration file. Usually this command opens up hole in a firewall for access. Knock is a port-knock client. It allows sending of TCP/UDP packets, creating a specific sequence of port-hits on the listening server. More information about Knock is available at <a href="http://www.zeroflux.org/projects/knock/">Knock project web site</a>. Knock source code is hosted on <a href="https://github.com/jvinet/knock/">Knock GitHub repository</a>.</p>
  </thead>
                     <tbody>
                       <tr>
@@ -86,10 +90,10 @@
         </div>
         <div class="col-lg-6">
             <div class="page-header">
-                <h5 id="tables">woodoomon</h5>
+                <h4 id="tables">woodoomon</h4>
             </div>
             <div class="bs-component">
-                <table class="table table-striped table-hover">
+                <table class="table table-striped">
                     <thead>
                     <p>WooDooMon package contains a set of probes for monitoring IPB/SCL computational resources.</p>
 
@@ -154,6 +158,14 @@
     </div>
 </div>
 
+        </div>
+    </div>
+    <blockquote class="blockquote-reverse">
+        <small>
+            Modified on 12 Aug 2014.
+            Created on 28 Jun 2014.
+        </small>
+    </blockquote>
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     </body>

@@ -1,6 +1,6 @@
 ---
 title:      HP LaserJet 1000 on OS X Mavericks
-layout:     post
+layout:     default
 group:      notes
 published:  28 Jun 2014
 modified:   04 Aug 2014
