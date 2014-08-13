@@ -1,9 +1,10 @@
 ---
-title:      HP LaserJet 1000 on OS X Mavericks
+title:      hp laserjet 1000 on os x mavericks
 layout:     default
 group:      notes
-published:  28 Jun 2014
-modified:   04 Aug 2014
+navigation: false
+created:    28 Jun 2014
+updated:    04 Aug 2014
 ---
 
 [HP LaserJet 1000](http://h20565.www2.hp.com/portal/site/hpsc/template.PAGE/public/psi/swdHome?sp4ts.oid=45675&ac.admitted=1406812827187.876444892.492883150) is an old printer model that is not supported on [Mac OS X](https://www.apple.com/osx/). However, using [foo2zjs](http://foo2zjs.rkkda.com/) printer driver for [ZjStream protocol](http://www.undocprint.org/formats/page_description_languages/zjstream) it is possible to configure [OS X Mavericks](https://www.apple.com/osx/) (as well as [Snow Leopard](http://www.apple.com/support/snowleopard/), [Lion](http://www.apple.com/support/lion/), and [Mountain Lion](http://www.apple.com/support/osx/mountainlion/)) to support [HP LaserJet 1000](http://h20565.www2.hp.com/portal/site/hpsc/template.PAGE/public/psi/swdHome?sp4ts.oid=45675&ac.admitted=1406812827187.876444892.492883150). Here are instructions on how to set it up.

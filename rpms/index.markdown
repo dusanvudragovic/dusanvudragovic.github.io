@@ -4,7 +4,7 @@ layout:     default
 group:      rpms
 navigation: true
 created:    28 Jun 2014
-modified:   12 Aug 2014
+updated:    12 Aug 2014
 ---
 
 <div class="bs-docs-section" markdown="1">
@@ -14,7 +14,7 @@ modified:   12 Aug 2014
                 <h4 id="tables">knock</h4>
             </div>
             <div class="bs-component">
-                <table class="table table-striped table-hover">
+                <table class="table table-striped">
                     <thead>
                     {{ 'The knock package contains client (knock), daemon (knockd), and corresponding init.d script. Knockd is a [port-knocking](http://en.wikipedia.org/wiki/Port_knocking) process that listens all network traffic at the link-layer level. Once it detects a specific sequence of port-hits, it runs a command defined in its configuration file. Usually this command opens up hole in a firewall for access. Knock is a port-knock client. It allows sending of TCP/UDP packets, creating a specific sequence of port-hits on the listening server. More information about Knock is available at [Knock project web site](http://www.zeroflux.org/projects/knock/). Knock source code is hosted on [Knock GitHub repository](https://github.com/jvinet/knock/).' | markdownify }} </thead>
                     <tbody>

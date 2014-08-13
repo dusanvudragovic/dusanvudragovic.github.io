@@ -4,7 +4,7 @@ layout:     default
 group:      rpms
 navigation: false
 created:    28 Jun 2014
-modified:   12 Aug 2014
+updated:    12 Aug 2014
 ---
 
 <div class="bs-docs-section" markdown="1">

@@ -4,7 +4,7 @@ layout:     default
 group:      notes
 navigation: true
 created:    28 Jun 2014
-modified:   28 Jun 2014
+updated:    28 Jun 2014
 ---
 
 {% for post in site.posts %}
